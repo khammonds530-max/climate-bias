@@ -20,46 +20,6 @@ This question is important because online political discourse increasingly shape
 - [html_master.csv](https://api.govinfo.gov/docs/): API
 - [wiki_texts](https://en.wikipedia.org/wiki/Main_Page): Scraped
 
-## Structure
-
-```
-final-project-climatebias
-├── Climate_Dataset/
-│   ├── Climate_CSV/                          # Reddit comments by topic (CSV)
-│   │   └── *.csv
-│   ├── Climate_XLS/                          # Reddit comments by topic (XLS)
-│   │   └── *.xls / *.xlsx
-│   ├── climate_df.csv                        # Combined & cleaned Reddit comments
-│   └── reddit_dataset_clean.ipynb            # Merging, cleaning, and EDA
-├── Congress_Dataset/
-│   ├── corpus/
-│   │   ├── affiliation/
-│   │   │   ├── legislators-current.yaml      # Current member party data
-│   │   │   └── legislators-historical.yaml   # Former member party data
-│   │   ├── articles/
-│   │   │   └── *__articles.json              # Daily Congressional Report articles
-│   │   ├── text/
-│   │   │   ├── html_master.csv               # Govinfo HTMLs (2017-2022)
-│   │   │   ├── record_urls.json              # Congress.gov HTML links
-│   │   │   └── speeches_master.csv           # Parsed floor speeches
-│   │   └── reddit_scored.csv                 # Scored comments from partisan_score.ipynb
-│   ├── congress_api.ipynb                    # API extraction & HTML parsing script
-│   └── partisan_score.ipynb                  # Partisan language scoring script
-├── Text_Embedding/
-│   ├── Similarity_Analysis.ipynb             # Cosine similarity of Wiki and Reddit script
-│   ├── reddit_embedding.ipynb                # Reddit embedding script
-│   └── reddit_embeddings.npy                 # Saved Reddit embeddings
-├── Wiki_Dataset/
-│   ├── wiki_texts/                           # Scraped Wikipedia chunks
-│   │   └── *.csv
-│   └── Wiki_scraping.ipynb                   # Sliding window scraping script
-├── 3d_plot.html                              # Interactive visualization of variables
-├── analysis.ipynb                            # Main analysis notebook
-├── Check-in 1 Report.pdf                     # Project progress report (check-in 1)
-├── Check-in 2 Report.pdf                     # Project progress report (check-in 2)
-├── README.md                                 # Project overview and instructions
-└── WORKFLOW.md                               # Pipeline workflow documentation
-```
 
 ## Libraries
 
@@ -121,4 +81,3 @@ final-project-climatebias
 - [Video](https://drive.google.com/file/d/19x1oZNDC2IRJFI9QI-2KEA7WHFoRKg1Z/view?usp=sharing)
 - [Original Presentation](https://github.com/macs30112-winter26/final-project-climatebias/blob/main/Presentations/Climate_Bias_Presentation_original.pdf)
 - [Updated Presentation](https://github.com/macs30112-winter26/final-project-climatebias/blob/main/Presentations/Climate_Bias_Presentation_Updated.pdf)
-- 
